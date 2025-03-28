@@ -57,13 +57,11 @@ const library = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    author: z.string().optional(),
-    description: z.string().optional(),
-    type: z.enum(["book", "article", "video", "podcast", "other"]).optional(),
-    pubDate: z.coerce.date().optional(),
-    url: z.string().optional(),
-    antilibrary: z.boolean().optional(), // true if it's an "antilibrary" item
+    description: z.string(),
+    type: z.enum(["video_game", "movie", "book", "article", "podcast", "other"]),
+    creator: z.string(),
     tags: z.array(z.string()).optional(),
+    license: z.string().optional(),
     draft: z.boolean().optional(),
   }),
 });
