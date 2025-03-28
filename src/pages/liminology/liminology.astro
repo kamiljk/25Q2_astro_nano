@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Container from "@components/Container.astro";
+import PageLayout from "../../content/layouts/PageLayout.astro";
+import ArrowCard from "@components/ArrowCard.astro";
+
+const liminology = (await getCollection("liminology"))
+  .filter(item => !item.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+---
+
+<PageLayout title="Liminology" description="Explore liminology entries.">
+  <Container>
+    <h1 class="font-semibold text-black dark:text-white">Liminology</h1>
+    <ul class="flex flex-col gap-4 mt-6">
+      {liminology.map(item => (
+        <li>
+          <ArrowCard entry={item} />
+        </li>
+      ))}
+    </ul>
+  </Container>
+</PageLayout>

@@ -1,0 +1,24 @@
+---
+import { getEntryBySlug } from "astro:content";
+import Container from "@components/Container.astro";
+import PageLayout from "../../content/layouts/PageLayout.astro";
+
+const { slug } = Astro.params;
+const entry = await getEntryBySlug("liminology", slug);
+
+if (!entry) {
+  throw new Error(`Liminology entry with slug "${slug}" not found.`);
+}
+
+const { Content, data } = await entry.render();
+---
+
+<PageLayout title={data.title} description={data.description}>
+  <Container>
+    <article class="prose dark:prose-dark">
+      <h1>{data.title}</h1>
+      <p class="text-sm opacity-75">{new Date(data.date).toLocaleDateString()}</p>
+      <Content />
+    </article>
+  </Container>
+</PageLayout>
