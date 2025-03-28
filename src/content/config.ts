@@ -57,7 +57,10 @@ const library = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    type: z.array(z.enum(["video_game", "movie", "book", "article", "podcast", "tv_show", "other"])),
+    type: z.union([
+      z.string(),
+      z.array(z.enum(["video_game", "movie", "book", "article", "podcast", "tv_show", "other"]))
+    ]),
     creator: z.string(),
     tags: z.array(z.string()).optional(),
     license: z.string().optional(),

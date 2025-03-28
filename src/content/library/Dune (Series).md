@@ -12,7 +12,7 @@ tags:
   - "dystopia"
   - "classic"
 related:
-  - "[[Vault Media/Media]]"
+  - "Vault Media/Media"
 license: "CC-BY"
 ---
 
@@ -55,5 +55,4 @@ license: "CC-BY"
 • **House Harkonnen** _(2000, Prelude to Dune #2)_
 • **House Atreides** _(1999, Prelude to Dune #1)_
 
-[[Vault Media/Media]]
-
+[Vault Media/Media](/Vault%20Media/Media)

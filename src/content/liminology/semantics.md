@@ -8,14 +8,14 @@ last_tended: "2025-03-22"
 epistemic_status: "Initial capture."
 description: "The study of meaning in language, focusing on how words, phrases, and sentences convey meaning in different contexts."
 lineage:
-  - "[Wikipedia: Semantics](https://en.wikipedia.org/wiki/Semantics)"
+  - { title: "Wikipedia: Semantics", url: "https://en.wikipedia.org/wiki/Semantics" }
 child_of:
-  - "[[Linguistics]]"
+  - "Linguistics"
 related:
-  - "[[Semiotics]]"
-  - "[[Pragmatics]]"
+  - "Semiotics"
+  - "Pragmatics"
 missing_links:
-  - Meaning Construction
+  - "Meaning Construction"
 ---
 **Definition:**  
 The study of meaning in language, exploring how words, phrases, and sentences convey meaning.

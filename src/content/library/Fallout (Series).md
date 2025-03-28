@@ -10,4 +10,4 @@ tags:
 license: "CC-BY"
 ---
 
-[[Vault Media/Media]]
+[Vault Media/Media](/Vault%20Media/Media)
