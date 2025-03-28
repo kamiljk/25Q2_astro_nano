@@ -9,7 +9,8 @@ epistemic_status: "Initial capture."
 description: "The study of meaning in language, focusing on how words, phrases, and sentences convey meaning in different contexts."
 lineage:
   - "[Wikipedia: Semantics](https://en.wikipedia.org/wiki/Semantics)"
-child_of: "[[Linguistics]]"
+child_of:
+  - "[[Linguistics]]"
 related:
   - "[[Semiotics]]"
   - "[[Pragmatics]]"

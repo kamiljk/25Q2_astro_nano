@@ -42,18 +42,38 @@ missing_links:
 ## Core Attributes
 
 ### ⧉ **Betwixt and Between**
+
+
+
+
+
 A condition between defined categories or roles—*no longer what was, not yet what will be*.
 
+
+
+
 ### ∴ **Structural Dissolution**
+
+
+
 Social, temporal, and narrative scaffolding loosens or collapses. Norms become negotiable.
 
+
+
+
 ### ✱ **Transformative Potential**
+
+
+
 This suspension makes reconfiguration possible—of identity, power, meaning, or belief.
 
 ### ⇋ **Ambiguity and Fluidity**
+
+
 Boundaries weaken. Interpretation, action, and selfhood become plastic.
 
 ### ⥁ **Danger and Possibility**
+
 What can be made new may also fail to congeal. Liminality is fertile but unstable ground.
 
 ---
@@ -121,31 +141,38 @@ These archetypes act as **symbolic overlays**, not literal system roles.
 | Discontinuity     | Loss of coherence            | Strategic rupture  
 | Anomie            | Breakdown of meaning         | Revaluation of values
 
+
 ---
 
 ## Application Heuristics
+
 
 - **Design Rites**: Guide entry and exit through transitions  
 - **Diagnose Freeze**: Is the system trapped in liminality with no reincorporation?  
 - **Map Tensions**: Identify where roles, identities, or systems have entered flux  
 - **Harness Productive Ambiguity**: Use suspension as a creative constraint, not a flaw
 
+
 ---
 
 ## Epistemic Note
 
-Liminality resists binaries, linear time, and fixed identity. It demands **fluid reasoning** and tools like:  
+Liminality resists binaries, 
+linear time, and fixed identity. It demands **fluid reasoning** and tools like:  
+
 - [[The Fold]]  
 - [[Actor-Network Theory]]  
 - [[Spectrum of Agency]]  
 - [[Assemblage]]
+
 
 ---
 
 ## Further Reading
 
 - [Arnold van Gennep, *The Rites of Passage* (1909)](https://www.google.com/search?q=Arnold+van+Gennep+Rites+of+Passage+site:books.google.com)  
-- [Victor Turner, *The Ritual Process* (1969)](https://www.google.com/search?q=Victor+Turner+The+Ritual+Process+site:books.google.com)  
+- [Victor Turner, *The Ritual
+ Process* (1969)](https://www.google.com/search?q=Victor+Turner+The+Ritual+Process+site:books.google.com)  
 - [Wikipedia: Liminality](https://en.wikipedia.org/wiki/Liminality)  
 - [Homi Bhabha, *The Location of Culture* (1994)](https://www.google.com/search?q=Homi+Bhabha+The+Location+of+Culture+site:books.google.com)  
 - [[Threshold State]]  

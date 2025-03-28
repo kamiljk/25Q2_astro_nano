@@ -1,4 +1,17 @@
-{items.map(item => (
+<script>
+  interface Item {
+    title: string;
+    description: string;
+    type?: string[];
+  }
+
+  const items: Item[] = [
+    { title: "Item 1", description: "Description 1", type: ["Type A", "Type B"] },
+    { title: "Item 2", description: "Description 2" },
+  ];
+</script>
+
+{items.map((item: Item) => (
   <div>
     <h2>{item.title}</h2>
     <p>{item.description}</p>
