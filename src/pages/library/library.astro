@@ -1,0 +1,7 @@
+{items.map(item => (
+  <div>
+    <h2>{item.title}</h2>
+    <p>{item.description}</p>
+    {item.type && <p>Type: {item.type.join(", ")}</p>} {/* Ensure type is optional */}
+  </div>
+))}

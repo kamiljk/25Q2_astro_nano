@@ -3,9 +3,22 @@ import type { Site, Metadata, Socials } from "@types";
 export const SITE: Site = {
   NAME: "Kamil JK",
   EMAIL: "kamil.j.krawczyk@gmail.com",
-  NUM_POSTS_ON_HOMEPAGE: 3,
+  NUM_POSTS_ON_HOMEPAGE: 2,
   NUM_WORKS_ON_HOMEPAGE: 2,
-  NUM_PROJECTS_ON_HOMEPAGE: 3,
+  NUM_PROJECTS_ON_HOMEPAGE: 2,
+  URL: "https://kamiljk.com", // Example additional property
+  DESCRIPTION: "Help I'm Stuck", // Example additional property
+};
+
+export const ALL_CONSTS = {
+  SITE,
+  HOME,
+  BLOG,
+  WORK,
+  PROJECTS,
+  LIMINOLOGY,
+  LIBRARY,
+  SOCIALS,
 };
 
 export const HOME: Metadata = {
@@ -30,25 +43,21 @@ export const PROJECTS: Metadata = {
 
 export const LIMINOLOGY: Metadata = {
   TITLE: "Liminology",
-  DESCRIPTION: "Exploring the science of thresholds and transitions.",
+  DESCRIPTION: "Exploring thresholds and transitions.",
 };
 
 export const LIBRARY: Metadata = {
   TITLE: "Library",
-  DESCRIPTION: "A curated collection of books, articles, and resources.",
+  DESCRIPTION: "Library & Antilibrary.",
 };
 
 export const SOCIALS: Socials = [
   { 
     NAME: "twitter-x",
-    HREF: "https://twitter.com/markhorn_dev",
-  },
-  { 
-    NAME: "github",
-    HREF: "https://github.com/markhorn-dev"
+    HREF: "https://twitter.com/kamiljk",
   },
   { 
     NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/markhorn-dev",
+    HREF: "https://www.linkedin.com/in/kamiljk",
   }
 ];

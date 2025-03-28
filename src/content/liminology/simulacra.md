@@ -9,12 +9,10 @@ epistemic_status: "Initial capture."
 description: "A concept from Baudrillard's philosophy that describes copies or representations of things that have no original, creating a hyperreality."
 lineage:
   - "[Jean Baudrillard, *Simulacra and Simulation* (1981)](https://www.google.com/search?q=Jean+Baudrillard+Simulacra+and+Simulation+site:books.google.com)"
-  - "[Wikipedia: Simulacra and Simulation](https://en.wikipedia.org/wiki/Simulacra_and_Simulation)"
-child_of:
-  - [[Postmodernism]]
+child_of: "[[Postmodernism]]"
 related:
-  - [[Hyperreality]]
-  - [[Representation]]
+  - "[[Hyperreality]]"
+  - "[[Representation]]"
 missing_links:
   - Media Theory
 ---

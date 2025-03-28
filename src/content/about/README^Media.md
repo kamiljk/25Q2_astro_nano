@@ -6,6 +6,7 @@ This document outlines the recommended YAML frontmatter structure for media-spec
 
 ```yaml
 title: "Media Title"
+slug: "media-title" # New field
 description: "Brief description of the media."
 type:
   - "book"
@@ -23,12 +24,13 @@ tags:
   - "example"
 related:
   - "https://example.com/related-note"
-license: "CC-BY" # New field
+license: "CC-BY"
 ```
 
 ## Field Descriptions
 
 - **`title`**: The title of the media.
+- **`slug`**: A URL-friendly identifier derived from the title (e.g., lowercase, hyphen-separated).
 - **`description`**: A brief summary of the media.
 - **`type`**: The type of media (e.g., book, movie, music, artwork, tv show, live event, poem, photo, social media).
 - **`creator`**: The name of the creator, author, or artist.
@@ -40,8 +42,10 @@ license: "CC-BY" # New field
 ## YAML Examples for Media Formats
 
 ### Movie
+
 ```yaml
 title: "Inception"
+slug: "inception" # New field
 description: "A mind-bending thriller about dreams within dreams."
 type: "movie"
 creator: "Christopher Nolan"
@@ -52,12 +56,14 @@ tags:
   - "blockbuster"
 related:
   - "https://example.com/dream-theory"
-license: "CC-BY-SA" # New field
+license: "CC-BY-SA"
 ```
 
 ### Music
+
 ```yaml
 title: "Bohemian Rhapsody"
+slug: "bohemian-rhapsody" # New field
 description: "A classic rock opera by Queen."
 type: "music"
 creator: "Queen"
@@ -68,12 +74,14 @@ tags:
   - "opera"
 related:
   - "https://example.com/freddie-mercury-biography"
-license: "proprietary" # New field
+license: "proprietary"
 ```
 
 ### TV Show
+
 ```yaml
 title: "Breaking Bad"
+slug: "breaking-bad" # New field
 description: "A high school chemistry teacher turns to cooking methamphetamine."
 type: "tv_show"
 creator: "Vince Gilligan"
@@ -84,12 +92,14 @@ tags:
   - "thriller"
 related:
   - "https://example.com/walter-white-analysis"
-license: "CC-BY" # New field
+license: "CC-BY"
 ```
 
 ### Live Event
+
 ```yaml
 title: "Coldplay Live in Paris"
+slug: "coldplay-live-in-paris" # New field
 description: "A live concert by Coldplay in Paris."
 type: "live_event"
 creator: "Coldplay"
@@ -100,12 +110,14 @@ tags:
   - "music"
 related:
   - "https://example.com/coldplay-discography"
-license: "CC-BY-NC" # New field
+license: "CC-BY-NC"
 ```
 
 ### Poem
+
 ```yaml
 title: "The Road Not Taken"
+slug: "the-road-not-taken" # New field
 description: "A poem about choices and their consequences."
 type: "poem"
 creator: "Robert Frost"
@@ -116,12 +128,14 @@ tags:
   - "choices"
 related:
   - "https://example.com/frost-poetry-analysis"
-license: "public domain" # New field
+license: "public domain"
 ```
 
 ### Book
+
 ```yaml
 title: "1984"
+slug: "1984" # New field
 description: "A dystopian novel about surveillance and totalitarianism."
 type: "book"
 creator: "George Orwell"
@@ -132,12 +146,14 @@ tags:
   - "politics"
 related:
   - "https://example.com/themes-in-1984"
-license: "public domain" # New field
+license: "public domain"
 ```
 
 ### Photo
+
 ```yaml
 title: "Earthrise"
+slug: "earthrise" # New field
 description: "A photograph of Earth taken from lunar orbit."
 type: "photo"
 creator: "William Anders"
@@ -148,12 +164,14 @@ tags:
   - "iconic"
 related:
   - "https://example.com/apollo-8-mission"
-license: "public domain" # New field
+license: "public domain"
 ```
 
 ### Social Media
+
 ```yaml
 title: "Viral Tweet"
+slug: "viral-tweet" # New field
 description: "A tweet that gained significant attention."
 type: "social_media"
 creator: "Example User"
@@ -164,20 +182,23 @@ tags:
   - "example"
 related:
   - "https://example.com/social-media-trends-2023"
-license: "CC-BY" # New field
+license: "CC-BY"
 ```
 
 ## Key Principles
 
 ### Portability
+
 YAML frontmatter ensures each media note is self-contained, enabling easy sharing and reuse across systems.
 
 ### Consistency
+
 Follow the standardized schema for all media content.
 
 ## Related Resources
 
 ### Core Guides
+
 - [Frontmatter Guide](README^Frontmatter.md): Structuring YAML frontmatter.
 - [Workflow Guide](README^Workflow.md): Best practices for workflows.
 - [User Guide](README^User_Guide.md): Instructions for end users.
@@ -185,9 +206,11 @@ Follow the standardized schema for all media content.
 - [Accessibility Guide](README^Accessibility_Guide.md): Ensuring inclusivity and accessibility.
 
 ### Technical Documentation
+
 - [Developer Guide](README^Developer_Guide.md): Technical documentation for developers.
 - [Integration Guide](README^Integration.md): Steps for integrating components.
 - [Components Guide](README^Components.md): Overview of reusable components.
 
 ### Conceptual References
+
 - [Theoretical Framework](README^Theoretical_Framework.md): Underlying principles and concepts.

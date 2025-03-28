@@ -8,6 +8,7 @@ This document outlines the core YAML frontmatter template used for annotating te
 
 ```yaml
 title: "Descriptive Title"
+slug: "descriptive-title" # New field for URL-friendly identifier
 description: "Brief summary of the note"
 pubDate: 2025-03-01
 tendDate: 2025-03-05
@@ -17,7 +18,7 @@ tags:
   - "example"
   - "tutorial"
 priority: "low | medium | high"
-license: "MIT | CC-BY | CC-BY-SA | proprietary | etc." # New field
+license: "MIT | CC-BY | CC-BY-SA | proprietary | etc."
 sources:
   - type: "historical | book | original | etc."
     author: "Author Name"
@@ -50,6 +51,7 @@ visibility:
 - Modularity: Designed to be extended as needed while keeping the core minimal.
 - Interoperability: YAML frontmatter enables seamless integration with external tools.
 - **License Awareness**: Use the `license` field to specify the license type for each note. This ensures clarity on usage rights and compliance.
+- **Slug Field**: Use the `slug` field to define a URL-friendly identifier for each note, improving accessibility and linking.
 
 ---
 
