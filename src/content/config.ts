@@ -43,7 +43,14 @@ const liminology = defineCollection({
     status: z.string().optional(),
     pubDate: z.coerce.date(),
     last_tended: z.coerce.date().optional(),
-    lineage: z.array(z.union([z.string(), z.object({ title: z.string(), url: z.string() })])).optional(),
+    lineage: z.array(
+      z.union([
+        z.string(),
+        z.object({ 
+          url: z.string() 
+        })
+      ])
+    ).optional(),
     child_of: z.array(z.string()).optional(),
     missing_links: z.array(z.string()).optional(),
     tags: z.array(z.string()).optional(),
@@ -68,4 +75,13 @@ const library = defineCollection({
   }),
 });
 
-export const collections = { blog, work, projects, liminology, library };
+const about = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    draft: z.boolean().optional(),
+  }),
+});
+
+export const collections = { blog, work, projects, liminology, library, about };

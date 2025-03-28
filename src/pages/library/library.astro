@@ -1,20 +1,22 @@
 <script>
-  interface Item {
+  export interface Item {
     title: string;
     description: string;
     type?: string[];
   }
 
-  const items: Item[] = [
+  export const items: Item[] = [
     { title: "Item 1", description: "Description 1", type: ["Type A", "Type B"] },
     { title: "Item 2", description: "Description 2" },
   ];
 </script>
 
-{items.map((item: Item) => (
-  <div>
-    <h2>{item.title}</h2>
-    <p>{item.description}</p>
-    {item.type && <p>Type: {item.type.join(", ")}</p>} {/* Ensure type is optional */}
-  </div>
-))}
+<>
+  {items.map((item: Item) => (
+    <div>
+      <h2>{item.title}</h2>
+      <p>{item.description}</p>
+      {item.type && <p>Type: {item.type.join(", ")}</p>} {/* Ensure type is optional */}
+    </div>
+  ))}
+</>
