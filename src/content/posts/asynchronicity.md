@@ -21,11 +21,13 @@ missing_links:
 The state of events or actions occurring at different times, often leading to a lack of synchronization or coordination.
 
 **Key Attributes:**  
+
 - **Temporal Disjunction:** Events are not aligned in time  
 - **Lack of Coordination:** Can lead to inefficiencies or misunderstandings  
-- **Flexibility:** Allows for independent timing of actions
+- **Flexibility:** Allows for independent timing of actions  
 
-## Linked Concepts
+## Linked Concepts  
+
 - [[Synchronization]]
 - [[Temporal Disjunction]]
 - [[Temporality]]
