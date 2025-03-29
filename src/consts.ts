@@ -10,16 +10,7 @@ export const SITE: Site = {
   DESCRIPTION: "Help I'm Stuck", // Example additional property
 };
 
-export const ALL_CONSTS = {
-  SITE,
-  HOME,
-  BLOG,
-  WORK,
-  PROJECTS,
-  LIMINOLOGY,
-  LIBRARY,
-  SOCIALS,
-};
+// Moved ALL_CONSTS to the end of the file to ensure all variables are declared before being used.
 
 export const HOME: Metadata = {
   TITLE: "Home",

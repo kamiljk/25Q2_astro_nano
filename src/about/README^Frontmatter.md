@@ -7,32 +7,32 @@ This document outlines the core YAML frontmatter template used for annotating te
 ## Template
 
 ```yaml
-title: "Descriptive Title"
-slug: "descriptive-title" # New field for URL-friendly identifier
+title: "Post-Truth Vibes"
+slug: "post-truth-vibes"
 description: "Brief summary of the note"
 pubDate: 2025-03-01
 tendDate: 2025-03-05
-scale: nano | micro | meso | macro | mega
-confidence: "low | moderate | high"
+section: "liminology"
+scale: "meso"
+type: "theory"
 tags:
-  - "example"
-  - "tutorial"
-priority: "low | medium | high"
-license: "MIT | CC-BY | CC-BY-SA | proprietary | etc."
+  - "truth"
+  - "disinfo"
+  - "memetics"
+confidence: "moderate"
+priority: "medium"
 sources:
-  - type: "historical | book | original | etc."
+  - type: "book"
     author: "Author Name"
     title: "Source Title"
-    link: "https://example.com"
+    link: "https://example.com/source"
 relationships:
-  parent: "[[Parent Note or Project]]"
-  children:
-    - "[[Child Note 1]]"
-    - "[[Child Note 2]]"
+  parent: "[[Truth Systems]]"
   related:
-    - "[[Related Note]]"
+    - "[[Media Fractures]]"
+    - "[[Memetic Drift]]"
 layout: "DefaultLayout"
-component: "p5Sketch"
+component: "ArticleComponent"
 assets:
   images:
     - "images/example.jpg"
@@ -42,6 +42,8 @@ visibility:
   hide:
     - "pubDate"
     - "relationships"
+license: "CC-BY"
+sourceURL: "https://example.com/post-truth-essay"
 ```
 
 ## Key Principles
@@ -52,6 +54,8 @@ visibility:
 - Interoperability: YAML frontmatter enables seamless integration with external tools.
 - **License Awareness**: Use the `license` field to specify the license type for each note. This ensures clarity on usage rights and compliance.
 - **Slug Field**: Use the `slug` field to define a URL-friendly identifier for each note, improving accessibility and linking.
+- **Section Field:** Define the note's placement within the digital garden (e.g., `library`, `liminology`, `links`, `about`).
+- **Type Field:** Optionally provide additional granularity (e.g., `music`, `film`, `social`, `theory`) to further categorize content.
 
 ---
 
@@ -66,7 +70,6 @@ visibility:
 ### Technical Documentation
 
 - [Developer Guide](README^Developer_Guide.md): Technical documentation for developers.
-- [Integration Guide](README^Integration.md): Steps for integrating components.
 - [Components Guide](README^Components.md): Overview of reusable components.
 
 ### Conceptual References

@@ -12,7 +12,7 @@ This document outlines how we designed and refined our workflow for managing not
 
 - We start with YAML templates from the
   [Frontmatter README](README^Frontmatter.md) or
-  [Media README](README^Media.md). These templates are the
+  [Media README](README^Media.md). Common frontmatter fields include `title`, `slug`, `section`, `scale`, `type`, `tags`, and `confidence`. These help control how content is routed, rendered, and queried. These templates are the
   foundation of our system.
 - Markdown files are kept **simple** and **clear**. Complexity is avoided because clarity is our priority.
 - Notes are treated as **living documents**:
@@ -25,8 +25,7 @@ This document outlines how we designed and refined our workflow for managing not
   ```
 
   This field helps us track the maturity of a note, making it clear whether it is a draft, a work in progress, or nearly finalized. We’re comfortable with notes being works in progress—this field makes that explicit.
-  - **Major updates?** We log them in batches to track significant changes.
-  - **Minor tweaks?** These are made incrementally as ideas evolve.
+
 - Every `.md` file is designed to stand on its own. For example, each file includes a YAML frontmatter section that provides metadata (e.g., title, tags, and confidence level) and self-contained content that ensures the file is understandable even when viewed in isolation.
 
 ### **Portability**
@@ -69,16 +68,13 @@ For users, this means you can adapt our system to your needs, but for us, it’s
 - [Workflow README](README^Workflow.md): Best practices for workflows.
 - [User Guide README](README^User_Guide.md): Instructions for end users.
 - [Data Notebooks README](README^Data_Notebooks.md): Managing structured data notebooks.
-- [Workflow README](README^Workflow.md): (This document) Best practices for workflows.
 - [Accessibility Guide](README^Accessibility_Guide.md): Ensuring inclusivity and accessibility.
 
 ### Technical Documentation
 
 - [Developer Guide README](README^Developer_Guide.md): Technical documentation for developers.
-- [Integration README](README^Integration.md): Steps for integrating components.
 - [Components README](README^Components.md): Overview of reusable components.
 
 ### Conceptual References
 
 - [Theoretical Framework README](README^Theoretical_Framework.md): Underlying principles and concepts.
-<!-- Removed redundant link to avoid repetition -->

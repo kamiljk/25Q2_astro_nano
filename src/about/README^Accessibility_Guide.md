@@ -2,23 +2,27 @@
 
 ## Overview
 
-This guide outlines best practices for ensuring the project is accessible to all users, including those with disabilities. Accessibility is a core principle of modern web development, ensuring inclusivity and compliance with standards like WCAG (Web Content Accessibility Guidelines).
+This guide outlines best practices for ensuring the project is accessible to all users, including those with disabilities. Accessibility is a core principle of modern web development, ensuring inclusivity and compliance with standards like WCAG (Web Content Accessibility Guidelines). In this project, accessibility is treated as an integral layer in a semantic, flat-file content system. Every `.md` entry—regardless of section or scale—is designed to be readable, navigable, and interoperable across devices and assistive technologies.
 
 ---
 
 ## Key Principles
 
 1. **Perceivable**:
+
    - Ensure all content is visible and understandable.
    - Provide text alternatives for non-text content (e.g., images, videos).
 
 2. **Operable**:
+
    - Make all functionality accessible via keyboard navigation.
    - Avoid time-based interactions that may hinder usability.
 
 3. **Understandable**:
+
    - Use clear and simple language.
    - Ensure consistent navigation and predictable behavior.
+   - Reflect scale and structure clearly in headers and navigation (e.g., use `<h2>` for `micro`, `<h1>` for `mega`, etc.).
 
 4. **Robust**:
    - Ensure compatibility with assistive technologies like screen readers.
@@ -34,7 +38,8 @@ This guide outlines best practices for ensuring the project is accessible to all
 
   ```html
   <header>
-    <h1>Welcome to the Digital Garden</h1>
+    <h1>Links</h1>
+    <p>Explore nano and meso-scale fragments</p>
   </header>
   ```
 
@@ -67,8 +72,10 @@ This guide outlines best practices for ensuring the project is accessible to all
 - Example:
 
   ```html
-  <img src="example.jpg" alt="A scenic view of mountains at sunset">
+  <img src="example.jpg" alt="A scenic view of mountains at sunset" />
   ```
+
+  - If using glyphs or Unicode symbols for navigation or concept mapping (e.g., ↝, ∿), provide accessible `<span>` text or ARIA labels to describe their semantic role.
 
 ---
 

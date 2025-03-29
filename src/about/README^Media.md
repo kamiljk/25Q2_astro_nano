@@ -19,6 +19,8 @@ type:
   - "social_media"
 creator: "Author, Artist, or Creator Name"
 pubDate: 2025-03-01
+section: "library"
+scale: "nano"
 tags:
   - "media"
   - "example"
@@ -32,9 +34,11 @@ license: "CC-BY"
 - **`title`**: The title of the media.
 - **`slug`**: A URL-friendly identifier derived from the title (e.g., lowercase, hyphen-separated).
 - **`description`**: A brief summary of the media.
-- **`type`**: The type of media (e.g., book, movie, music, artwork, tv show, live event, poem, photo, social media).
+- **`type`**: The type of media (e.g., book, movie, music, artwork, tv show, live event, poem, photo, social media). This differs from `section`, which defines the site zone (e.g., `library`, `liminology`).
 - **`creator`**: The name of the creator, author, or artist.
 - **`pubDate`**: The publication or release date in `YYYY-MM-DD` format (optional).
+- **`section`**: Defines which part of the site this content belongs to. Use `"library"` for most media entries.
+- **`scale`**: Represents the analytical resolution or scope of the media object (`nano`, `micro`, `meso`, etc.).
 - **`tags`**: Keywords for categorization.
 - **`related`**: Links to related notes or media.
 - **`license`**: The license under which the media is released.
@@ -50,6 +54,8 @@ description: "A mind-bending thriller about dreams within dreams."
 type: "movie"
 creator: "Christopher Nolan"
 pubDate: 2010-07-16
+section: "library"
+scale: "nano"
 tags:
   - "sci-fi"
   - "thriller"
@@ -68,6 +74,8 @@ description: "A classic rock opera by Queen."
 type: "music"
 creator: "Queen"
 pubDate: 1975-10-31
+section: "library"
+scale: "nano"
 tags:
   - "rock"
   - "classic"
@@ -86,6 +94,8 @@ description: "A high school chemistry teacher turns to cooking methamphetamine."
 type: "tv_show"
 creator: "Vince Gilligan"
 pubDate: 2008-01-20
+section: "library"
+scale: "nano"
 tags:
   - "crime"
   - "drama"
@@ -104,6 +114,8 @@ description: "A live concert by Coldplay in Paris."
 type: "live_event"
 creator: "Coldplay"
 pubDate: 2023-06-15
+section: "library"
+scale: "nano"
 tags:
   - "concert"
   - "live"
@@ -122,6 +134,8 @@ description: "A poem about choices and their consequences."
 type: "poem"
 creator: "Robert Frost"
 pubDate: 1916-08-01
+section: "library"
+scale: "nano"
 tags:
   - "poetry"
   - "classic"
@@ -140,6 +154,8 @@ description: "A dystopian novel about surveillance and totalitarianism."
 type: "book"
 creator: "George Orwell"
 pubDate: 1949-06-08
+section: "library"
+scale: "nano"
 tags:
   - "dystopia"
   - "classic"
@@ -158,6 +174,8 @@ description: "A photograph of Earth taken from lunar orbit."
 type: "photo"
 creator: "William Anders"
 pubDate: 1968-12-24
+section: "library"
+scale: "nano"
 tags:
   - "space"
   - "photography"
@@ -176,6 +194,8 @@ description: "A tweet that gained significant attention."
 type: "social_media"
 creator: "Example User"
 pubDate: 2023-09-15
+section: "library"
+scale: "nano"
 tags:
   - "social media"
   - "viral"
@@ -208,7 +228,6 @@ Follow the standardized schema for all media content.
 ### Technical Documentation
 
 - [Developer Guide](README^Developer_Guide.md): Technical documentation for developers.
-- [Integration Guide](README^Integration.md): Steps for integrating components.
 - [Components Guide](README^Components.md): Overview of reusable components.
 
 ### Conceptual References

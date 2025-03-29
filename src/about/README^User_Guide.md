@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide explains how we navigate and use our digital garden. It’s designed to help us find specific notes, explore relationships, and export data when needed. The YAML frontmatter is central to how we structure and interact with our content.
+This guide explains how we navigate and use our digital garden. It’s designed to help us find specific notes, explore relationships, and export data when needed. The YAML frontmatter is central to how we structure and interact with our content. Navigation and discovery are powered by semantic frontmatter fields like `scale`, `section`, and `type`, allowing users to browse by resolution, category, or media type.
 
 ---
 
@@ -12,15 +12,16 @@ This guide explains how we navigate and use our digital garden. It’s designed 
 
 - We start at the homepage to see the latest notes—it’s the garden’s entrance.
 - Filters like **tags**, **dates**, or **confidence levels** allow us to focus on specific areas of interest.
+- Sections include **Links**, **Library**, **Liminology**, and **About**. Each reflects a different layer of thought and content focus.
 
 ### **Search & Query**
 
 - Tools like Obsidian’s Dataview make querying straightforward. For example:
 
   ```dataview
-  TABLE title, pubDate, confidence
-  FROM "notes"
-  WHERE confidence = "high"
+  TABLE title, pubDate, scale, section, confidence
+  FROM "articles"
+  WHERE confidence = "high" AND scale = "micro"
   ```
 
 - This helps us quickly locate the most polished, high-confidence notes.
@@ -71,10 +72,10 @@ This guide reflects how we think about our digital garden—it’s not just a co
 ### Technical Documentation
 
 - [Developer Guide README](README^Developer_Guide.md): Technical documentation for developers.
-- [Integration README](README^Integration.md): Steps for integrating components.
 - [Components README](README^Components.md): Overview of reusable components.
 
 ### Conceptual References
 
 - [Theoretical Framework README](README^Theoretical_Framework.md): Underlying principles and concepts.
-- [Media README](README^Media.md): Handling media-specific content.
+- [Liminal Notation README](README^LiminalNotation.md): Symbolic language for mapping liminal dynamics.
+- [Media Reference README](README^Media.md): Structuring media-specific content entries.

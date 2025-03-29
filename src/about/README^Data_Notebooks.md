@@ -2,21 +2,15 @@
 
 ## Overview
 
-This document outlines the purpose, structure, and best practices for managing **Data Notebooks** within the digital garden. Data Notebooks are specialized Markdown files designed to capture, analyze, and visualize structured data. They integrate seamlessly with YAML frontmatter and tools like Obsidian, Astro, and React.
+This document outlines the purpose, structure, and best practices for managing **Data Notebooks** within the digital garden. Data Notebooks are structured `.md` files that capture micro-to-macro scale data for insight extraction, particularly useful for media breakdowns, content taxonomies, and liminal analysis.
 
 ---
 
 ## Purpose
 
-Data Notebooks serve as a bridge between raw data and meaningful insights. They are designed to:
-
-- **Organize Data**: Use YAML frontmatter to structure datasets.
-- **Enable Analysis**: Integrate with tools like Dataview for querying and visualization.
-- **Promote Reusability**: Ensure data is portable and adaptable across platforms.
+Data Notebooks bridge raw data and interpretive scaffolding. They can power visualization, media tracking, comparative analysis, and liminal role-mapping.
 
 ---
-
-## Popular Notebook Types
 
 ## Popular Notebook Types
 
@@ -31,6 +25,15 @@ Here are some specific types of **Data Notebooks** and their use cases:
 - **[Time Series Analysis Notebooks](https://facebook.github.io/prophet/)**: Analyze temporal data trends and patterns using libraries like [Prophet](https://facebook.github.io/prophet/) or ARIMA models.
 
 Each notebook type combines code, data, and narrative text to create a cohesive and interactive document for analysis and communication.
+
+---
+
+## Use Cases in the Garden
+
+- Track archetypes, tropes, or narrative beats across media (`scale: micro`)
+- Compare genre traits, aesthetics, or liminal motifs (`scale: meso`)
+- Build reference tables for symbolic elements, historical motifs, or memetic loops
+- Feed structured data into visualization components or cross-linked graphs
 
 ---
 
@@ -76,6 +79,8 @@ data:
 
 - Use clear and consistent field names.
 - Group related data entries into logical categories.
+- Use the `scale`, `type`, and `section` frontmatter fields to define context.
+- Prefer long-form records over deep nesting—favor flat, readable structures.
 
 ### Analysis & Visualization
 
@@ -102,16 +107,19 @@ Data Notebooks transform raw data into actionable insights. By following this st
 ## Related Documents
 
 ### Core Guides
+
 - [Frontmatter README](README^Frontmatter.md): Structuring YAML frontmatter.
 - [Workflow README](README^Workflow.md): Best practices for workflows.
 - [User Guide README](README^User_Guide.md): Instructions for end users.
 - [Data Notebooks README](README^Data_Notebooks.md): Managing structured data notebooks.
 
 ### Technical Documentation
+
 - [Developer Guide README](README^Developer_Guide.md): Technical documentation for developers.
 - [Integration README](README^Integration.md): Steps for integrating components.
 - [Components README](README^Components.md): Overview of reusable components.
 
 ### Conceptual References
+
 - [Theoretical Framework README](README^Theoretical_Framework.md): Underlying principles and concepts.
-- [Media README](README^Media.md): Handling media-specific content.
+- [Media README](README^Media.md): Guidance on structuring media records and reference taxonomies.
