@@ -1,7 +1,7 @@
 # Liminal Knowledge Engine — Consolidated System Overview
 
 This document serves as a high-level synthesis of the entire system architecture, design philosophy, and implementation logic powering this digital garden. It unifies key insights and technical patterns from all modular READMEs into a single guide for contributors, agents, and future maintainers.
-
+****
 ---
 
 ## ⊞ Architecture Overview

@@ -1,0 +1,14 @@
+---
+import { frontmatter, content } from 'astro:content';
+
+export const layout = 'PostLayout';
+
+<article>
+  <header>
+    <h1>{frontmatter.title}</h1>
+    {frontmatter.date && <p>{new Date(frontmatter.date).toLocaleDateString()}</p>}
+  </header>
+  <section>
+    {content}
+  </section>
+</article>

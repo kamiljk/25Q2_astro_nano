@@ -1,0 +1,12 @@
+const { collection, slug } = Astro.params;
+const content = await getCollection(collection, (entry) => entry.slug === slug);
+
+// Ensure the content exists
+if (!content) {
+  throw new Error(`Content not found for collection: ${collection}, slug: ${slug}`);
+}
+
+// Render the content using the appropriate layout
+const Layout = await import(`../../layouts/${content.layout || 'DefaultLayout'}.astro`);
+---
+<Layout {...content} />

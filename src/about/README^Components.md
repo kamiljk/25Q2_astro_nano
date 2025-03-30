@@ -2,84 +2,88 @@
 
 ## Overview
 
-This document explains how our project's frontmatter integrates with Astro and React components to render content dynamically. YAML frontmatter serves as the backbone for metadata, enabling seamless querying, parsing, and rendering across tools like Obsidian, Astro, and React. Components are designed to respond to semantic frontmatter fields like `section`, `scale`, and `type`, allowing context-aware rendering of diverse content types such as media analysis, theory notes, or linkposts.
+This document explains how the project utilizes Astro components to create a modular, reusable, and scalable architecture. Each component is designed to handle specific tasks, such as rendering links, headers, footers, or cards, while maintaining a consistent design system. The components integrate seamlessly with Astro's props system and leverage utility functions like `cn` for conditional styling.
 
-## Astro Integration
+## Current Usage of Components
 
-- **Markdown Processing:** Astro automatically exposes frontmatter as JavaScript objects.
-- **Component Mapping:** Use components to iterate over arrays (e.g., `sources`, `tags`) and render content conditionally.
-- **Semantic Filtering:** Use fields like `scale` and `section` in frontmatter to dynamically select component layouts or apply visual distinctions.
+### Link.astro
+- **Purpose:** Renders anchor tags with optional external target and underline settings.
+- **Usage:** Used across the project for navigation links, both internal and external.
+- **Features:**
+  - Accepts props like `href`, `external`, and `underline`.
+  - Dynamically applies styles using the `cn` utility function.
+  - Supports spreading additional props for flexibility.
 
-Example:
+### Header.astro
+- **Purpose:** Provides the site header with navigation links.
+- **Usage:** Displays the site name and links to key sections like "blog," "work," and "projects."
+- **Features:**
+  - Uses the `Link` component for navigation.
+  - Wraps content in the `Container` component for consistent layout.
 
-```jsx
----
-// Astro component example (Astro/React hybrid)
-const { title, tags, sources } = Astro.props;
----
-<h1>{title}</h1>
-<ul>
-  {tags.map(tag => <li>{tag}</li>)}
-</ul>
-<div>
-  {sources.map(source => (
-    <p>{source.title} by {source.author}</p>
-  ))}
-</div>
-```
+### Head.astro
+- **Purpose:** Manages global metadata and theme logic.
+- **Usage:** Sets metadata like title, description, and Open Graph/Twitter tags for each page.
+- **Features:**
+  - Preloads fonts for performance.
+  - Implements theme toggling with JavaScript and `ViewTransitions`.
 
-## React Integration
+### FormattedDate.astro
+- **Purpose:** Formats and displays dates in a user-friendly format.
+- **Usage:** Used to display dates in blog posts, projects, or other content.
+- **Features:**
+  - Accepts a `date` prop and outputs a `<time>` element.
+  - Formats dates as "MMM DD, YYYY" (e.g., "Jan 1, 2024").
 
-- **Gray Matter:** Use Gray Matter to parse YAML frontmatter from Markdown files.
-- **Prop Passing:** Pass the parsed metadata as props to React components.
+### Footer.astro
+- **Purpose:** Displays the site footer with theme toggle buttons and a "Back to Top" button.
+- **Usage:** Appears at the bottom of every page.
+- **Features:**
+  - Includes the `BackToTop` component for smooth scrolling.
+  - Provides buttons for toggling between light, dark, and system themes.
 
-Example:
+### Container.astro
+- **Purpose:** Wraps content in a consistent layout with max-width and padding.
+- **Usage:** Used in components like `Header` and `Footer` to standardize layout.
+- **Features:**
+  - Ensures consistent spacing and alignment across the site.
 
-```jsx
-import React from "react";
+### BackToTop.astro
+- **Purpose:** Adds a button to scroll back to the top of the page.
+- **Usage:** Included in the footer for user convenience.
+- **Features:**
+  - Smooth scrolling behavior with hover animations.
 
-const Note = ({ frontmatter }) => (
-  <div>
-    <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.description}</p>
-  </div>
-);
+### BackToPrev.astro
+- **Purpose:** Displays a "back" link for navigating to the previous page.
+- **Usage:** Used in pages or sections where users might need to navigate back.
+- **Features:**
+  - Styled `<a>` element with an arrow icon and slot for custom text.
 
-export default Note;
-```
+### ArrowCard.astro
+- **Purpose:** Displays a summary card with a hover arrow icon, linking to detailed content.
+- **Usage:** Used for blog posts, projects, or other content previews.
+- **Features:**
+  - Accepts an `entry` prop for dynamic content.
+  - Animates the arrow icon on hover for visual feedback.
 
 ## Key Principles
 
-- **Modularity:** Components are reusable and adaptable.
-- **Interconnectivity:** Seamless integration between YAML metadata and dynamic rendering.
-- **Scalability:** Ensure components can gracefully handle arrays and objects.
-
-## Theoretical Component Ideas
-
-This framework can leverage a variety of components to enhance content presentation and interactivity. Below are some speculative ideas for components:
-
-- **Linkpost Cards:** Visualize `links` content with embedded source preview, `nano`/`meso` glyphs, and destination indicator.
-- **Library Entries:** Render `library` content with metadata like media type, scale, tags, and source platform.
-- **Liminology Blocks:** Display theoretical fragments or diagrams with dynamic notation support.
-- **Quotes & Excerpts:** Highlight phrases or cultural artifacts, potentially annotated or expandable.
-- **Mega Essays:** Structured, stylized layout for authored synthesis content, with auto-generated table of contents and deep linking.
-
-Components should be built with glyph-awareness and scale-context in mind, optionally adapting their styling or visibility based on `scale` values like `nano`, `macro`, or `mega`.
+- **Modularity:** Each component is designed to handle a specific task, making it reusable and easy to maintain.
+- **Scalability:** Components can handle dynamic props and adapt to different use cases.
+- **Consistency:** Shared utility functions and design patterns ensure a cohesive user experience.
 
 ## Related Documents
 
 ### Core Guides
-
 - [Frontmatter Guide](README^Frontmatter.md): Structuring YAML frontmatter.
 - [Workflow Guide](README^Workflow.md): Best practices for workflows.
 - [User Guide](README^User_Guide.md): Instructions for end users.
 
 ### Technical Documentation
-
 - [Developer Guide](README^Developer_Guide.md): Technical documentation for developers.
 - [Integration Guide](README^Integration.md): Steps for integrating components.
 - [Components Guide](README^Components.md): Overview of reusable components.
 
 ### Conceptual References
-
 - [Theoretical Framework](README^Theoretical_Framework.md): Underlying principles and concepts.
